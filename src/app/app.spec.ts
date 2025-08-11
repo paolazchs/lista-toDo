@@ -1,10 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
+import { ListaToDo } from './lista-to-do/lista-to-do';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App],
+      imports: [App, ListaToDo],
     }).compileComponents();
   });
 
