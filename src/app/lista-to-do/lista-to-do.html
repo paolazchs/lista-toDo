@@ -3,12 +3,23 @@
 <main>
     <h1>To<span class="do">Do </span><span class="list">List</span></h1>
 
-    <form class="add-item">
-        <input type="text" placeholder="Task to be done..." id="itemInput">
+    <form #Form="ngForm" class="add-item">
+        <input 
+        type="text" 
+        placeholder="Task to be done..." 
+        id="itemInput" 
+        name="itemInput"    
+        [(ngModel)]="itemInput">
         <button class="add" type="submit">Add task</button>
         <button class="remove">Remove task</button>
     </form>
 
+    <div class="fundo">
+        <ul class="items">
+            <li><input class="checkbox" type="checkbox"></li>
+            <li><p>hoje</p></li>
+        </ul>
+    </div>
     <div class="fundo">
         <ul class="items">
             <li><input class="checkbox" type="checkbox"></li>
